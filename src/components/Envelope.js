@@ -24,7 +24,7 @@ const Envelope = () => {
   return (
     <div>
       <div className="text">
-        <h1>Hey Baby! Listen, this one's for you 💖....</h1>
+        <h1>Hey, open up! A surprise awaits. ✨</h1>
       </div>
       <div id="envelope">
         <div id="back">
@@ -78,19 +78,17 @@ const Envelope = () => {
         </div>
 
         <div id="letter">
-          <h1>For My <span>Love</span></h1>
+          <h1>For My <span>Madam Ji</span></h1>
           <p>
-            You are the person I have been dreaming all my life, so allow me to
-            express my intense love for you. You are the most precious thing in my
-            life. You have fascinated my heart and seized my mind with your
-            magnetic presence and I keep dreaming of yourself. Your memories are
-            invaluable treasure of my life, which are locked inside my heart. The
-            time spent with you was the most mesmerizing and delightful of my
-            life. <br />
+          You are the one who has filled my world with magic and meaning. 
+          Your presence captivates my heart and lingers in my thoughts, making every moment unforgettable. 
+          The memories we've created are my most treasured keepsakes, locked safely within me. 
+          Every second spent with you has been nothing short of mesmerizing, and I look forward to all the beautiful moments yet to come. <br />
             <br />
-            I take this opportunity to ask for your consent if you want to be my
-            life partner. This letter is a token of my love for you. <br />
-            If You Accept <Link to="/new">Click Here</Link> 
+            I want to take this moment to ask if you would walk this journey of life with me. 
+            This letter is a heartfelt token of what you mean to me.  <br />
+            <br />
+            If your heart says yes, <Link to="/new">Click Here</Link> 
           </p>
         </div>
         <button onClick={openUp}>Open Letter</button>

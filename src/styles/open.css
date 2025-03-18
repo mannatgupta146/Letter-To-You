@@ -85,9 +85,10 @@ body {
   
   /* Paragraph inside the letter */
   #letter p {
-    font-size: 17px;
+    font-size: 18.6px;
     padding: 2px;
     line-height: 20px;
+    text-align: center;
   }
   
   /* Image inside the letter */
@@ -154,10 +155,22 @@ body {
   }
   
   /* Text styling */
+  
   .text h1 {
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
-  }
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 
+                 0px 0px 10px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
   
   /* Link styling */
   a {
