@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Envelope from "./components/Envelope";
 import Heart from "./components/Heart";
 
@@ -7,8 +7,11 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Envelope />} /> {/* Default route for Envelope */}
-        <Route path="/new" element={<Heart />} /> {/* Route for Heart component */}
+        {/* Default route for Envelope */}
+        <Route path="/" element={<Envelope />} />
+
+        {/* Route for Heart component */}
+        <Route path="/new" element={<Heart />} />
       </Routes>
     </Router>
   );
