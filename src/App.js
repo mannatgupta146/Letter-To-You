@@ -1,13 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Envelope from "./components/Envelope";
 import Heart from "./components/Heart";
 
 const App = () => {
   return (
-    <div>
-      <Envelope />
-      <Heart />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Envelope />} /> {/* Default route for Envelope */}
+        <Route path="/new" element={<Heart />} /> {/* Route for Heart component */}
+      </Routes>
+    </Router>
   );
 };
 

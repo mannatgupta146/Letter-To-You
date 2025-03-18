@@ -1,12 +1,14 @@
+/* General body styling */
 body {
     margin: 0;
     position: relative;
     width: 100vw;
     height: 100vh;
-  
+    overflow: hidden;
     background-image: linear-gradient(0deg, #e87d7d 0%, #11a4ff 100%);
   }
   
+  /* Envelope container */
   #envelope {
     position: absolute;
     top: calc(50vh - 200px);
@@ -15,6 +17,7 @@ body {
     height: 300px;
   }
   
+  /* All child elements of the envelope */
   #envelope > * {
     position: absolute;
     top: 0;
@@ -22,21 +25,25 @@ body {
     display: none;
   }
   
+  /* Back of the envelope */
   #back {
     display: block;
     z-index: 0;
   }
   
+  /* Front of the envelope */
   #front {
     display: block;
     z-index: 10;
   }
   
+  /* Top flap of the envelope */
   #top {
     display: block;
     z-index: 11;
   }
   
+  /* Animation for envelope elements */
   #top.animate,
   #front.animate,
   #back.animate,
@@ -46,6 +53,7 @@ body {
     transition-delay: 1s;
   }
   
+  /* Letter styling */
   #letter {
     display: flex;
     flex-direction: column;
@@ -58,31 +66,43 @@ body {
     right: 15px;
     bottom: 5px;
     top: 105px;
-  
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+                0px 1px 2px 0px rgba(0, 0, 0, 0.06);
     overflow: hidden;
     font-size: 16px;
   }
-  h1 {
+  
+  /* Letter heading */
+  #letter h1 {
     padding-top: 12px;
+    font-size: inherit;
   }
-  h1 span {
+  
+  /* Span inside the heading */
+  #letter h1 span {
     color: red;
   }
-  p {
+  
+  /* Paragraph inside the letter */
+  #letter p {
     font-size: 17px;
     padding: 2px;
     line-height: 20px;
   }
+  
+  /* Image inside the letter */
   #letter img {
+    height: 50%;
     background-size: cover;
   }
+  
+  /* Animation for the letter */
   #letter.animate {
     animation: makebig 2s forwards;
     animation-delay: 1s;
   }
   
+  /* Keyframes for the letter animation */
   @keyframes makebig {
     0% {
       top: 105px;
@@ -99,7 +119,7 @@ body {
       font-size: 16px;
     }
     100% {
-      top: -0px;
+      top: 0;
       left: -55px;
       right: -25px;
       bottom: -100px;
@@ -107,20 +127,7 @@ body {
     }
   }
   
-  #letter h1 {
-    font-size: inherit;
-  }
-  
-  #letter h2 {
-    font-size: inherit;
-  }
-  
-  #letter img {
-    height: 50%;
-  }
-  a {
-    color: red;
-  }
+  /* Button styling */
   #envelope button {
     display: block;
     z-index: 15;
@@ -138,13 +145,26 @@ body {
     transition: transform 1s, background-color 1s, color 1s;
   }
   
+  /* Button hover effect */
   #envelope button:hover {
     background-color: white;
     transform: scale(1.5);
     color: rgb(255, 89, 0);
     transition: transform 1s, background-color 1s, color 1s;
   }
+  
+  /* Text styling */
   .text h1 {
     color: rgb(255, 255, 255);
     text-align: center;
+  }
+  
+  /* Link styling */
+  a {
+    color: red;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
   }

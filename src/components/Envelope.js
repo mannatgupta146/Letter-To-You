@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 import "../styles/open.css";
 
 const Envelope = () => {
@@ -89,10 +90,10 @@ const Envelope = () => {
             <br />
             I take this opportunity to ask for your consent if you want to be my
             life partner. This letter is a token of my love for you. <br />
-            If You Accept <a href="/new">Click Here</a>
+            If You Accept <Link to="/new">Click Here</Link> 
           </p>
         </div>
-        <button onClick={openUp}>Click Here</button>
+        <button onClick={openUp}>Open Letter</button>
       </div>
     </div>
   );
