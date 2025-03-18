@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/open.css";
+import "../styles/open.css";
 
 const Envelope = () => {
   const openUp = () => {
