@@ -6,7 +6,7 @@ A heartfelt digital letter and envelope animation built with React. This project
 
 Here’s a sneak peek of the project:
 
-![Screenshot](screenshot.png)
+![Screenshot](image.png)
 
 ## Inspiration 💡
 
@@ -14,18 +14,16 @@ This project was inspired by the timeless tradition of writing letters to expres
 
 ## How It Works 🛠️
 
-1.
+1. **Envelope Animation**: When the user clicks the "Open Letter" button, the envelope opens with a smooth animation, revealing the letter inside.
+2. **Letter Content**: The letter contains a heartfelt message, which can be customized to suit your needs.
+3. **Heart Page**: After reading the letter, the user can navigate to a "Heart" page by clicking the "Click Here" link.
+
 ## Features ✨
 
 - **Interactive Envelope Animation**: Click to open the envelope and reveal the letter.
 - **Responsive Design**: Works seamlessly on all devices.
 - **Customizable Content**: Easily edit the letter content to make it personal.
 - **Routing**: Navigate to a "Heart" page after opening the letter.
-
- **Envelope Animation**: When the user clicks the "Open Letter" button, the envelope opens with a smooth animation, revealing the letter inside.
-2. **Letter Content**: The letter contains a heartfelt message, which can be customized to suit your needs.
-3. **Heart Page**: After reading the letter, the user can navigate to a "Heart" page by clicking the "Click Here" link.
-
 
 ## Technologies Used 🛠️
 
@@ -45,23 +43,17 @@ Check out the live demo here:
 Follow these steps to run the project on your local machine:
 
 1. **Clone the repository**:
-   ```
-   git clone https://github.com/mannatgupta146/Letter-To-You.git
-   ```
+```git clone https://github.com/mannatgupta146/Letter-To-You.git```
+
 2. **Navigate to the project directory**:
-```
-cd Letter-To-You
-```
+```cd Letter-To-You```
 
 3. **Install dependencies**:
-```
-npm install
-```
+```npm install```
 
 4. **Start the development server**:
-```
-npm start
-```
+```npm start```
+
 5. **Open your browser**:
 Visit http://localhost:3000 to view the project.   
 
@@ -81,4 +73,4 @@ Contributions are welcome! If you'd like to improve this project, follow these s
 - Built with ❤️ using React.
 
 ---
-***This is for you, now and always.💌***
+***This is for you, now and always.💌
