@@ -73,4 +73,4 @@ Contributions are welcome! If you'd like to improve this project, follow these s
 - Built with ❤️ using React.
 
 ---
-***This is for you, now and always.💌
+***This is for you, now and always.💌***
