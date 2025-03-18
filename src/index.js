@@ -7,7 +7,7 @@ import App from "./App";
 
 // Create a root and render the app
 const container = document.getElementById("root");
-const root = createRoot(container);
+const root = createRoot(container); // Declare 'root' with const
 
 root.render(
   <HashRouter>
